@@ -28,3 +28,4 @@ jobs:
         password: ${{ secrets.REGISTRY_PASSWORD }}
     - run: |
         docker build . -t danncontainerregistry.azurecr.io/myexpressapp-dann:${{ github.sha }}
+        docker push danncontainerregistry.azurecr.io/myexpressapp-dann:${{ github.sha }}

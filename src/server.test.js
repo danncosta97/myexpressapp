@@ -11,7 +11,7 @@ describe('root', () => {
             .get('/')
             .expect(200)
             .then((res) => {
-                expect(res.text).toContain('Welcome to Express');
+                expect(res.text).toContain('Deploy de uma aplicação simples em Node.js no Azure com Docker utilizando o GitHub Actions.');
                 done();
             }).catch(err => done(err));;
     });
